@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EPS_WEB_10</title>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        canvas {
+            border: 3px double black;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        function createImage() 
+        {
+            drawCanvas1();
+            drawCanvas2();
+            drawCanvas3();
+        }
+
+        function drawCanvas1() 
+        {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "black";
+            ctx.fillRect(20, 20, 50, 50);
+            ctx.fillStyle = "white";
+            ctx.fillRect(30, 30, 30, 30);
+        }
+        function drawCanvas2() 
+        {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "rgb(100,0,0)";
+            ctx.fillRect(80, 80, 170, 90);
+            ctx.fillStyle = "rgb(0,100,0)";
+            ctx.fillRect(90, 90, 175, 95);
+            ctx.fillStyle = "rgb(0,0,100)";
+            ctx.fillRect(100, 100, 180, 100);
+        }
+        function drawCanvas3() 
+        {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "blue";
+            ctx.fillRect(120, 250, 30, 100);
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(180, 280, 30, 70);
+
+            ctx.fillStyle = "blue";
+            ctx.fillRect(240, 230, 30, 120);
+
+            ctx.fillStyle = "green";
+            ctx.fillRect(120, 230, 30, 20);
+
+            ctx.fillStyle = "green";
+            ctx.fillRect(180, 260, 30, 20);
+
+            ctx.fillStyle = "green";
+            ctx.fillRect(240, 220, 30, 20);
+        }
+    </script>
+    <body onload="createImage();">
+        <canvas id="my_canvas" width="400" height="400"></canvas>    
+    </body>
+</body>
+
+</html>

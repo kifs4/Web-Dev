@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EPS_WEB_10</title>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        canvas {
+            border: 3px double black;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        function createImage() 
+        {
+            var canvas = document.getElementById("my_canvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "rgb(100,0,0)"
+            ctx.fillRect(20, 10, 50, 70);
+        }
+
+    </script>
+    <body onload="createImage();">
+        <canvas id="my_canvas" width="150" height="150"></canvas>    
+    </body>
+</body>
+
+</html>

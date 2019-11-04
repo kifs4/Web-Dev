@@ -1,0 +1,8 @@
+#top { height: 15%; width:100%; background-color:red  }
+
+#navigation { height: 70%; width:20%;background-color: green; float: left}
+
+#content { height: 70%; width:80%; background-color: yellow; float:left  }
+
+#footer { height: 15%; width:100%; background-color: blueviolet; clear: left}
+ #target { width: 100%}

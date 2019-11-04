@@ -1,0 +1,19 @@
+<html>
+ <head>
+  <script type="text/javascript">        
+    function createImage() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        ctx.strokeStyle="red";
+        ctx.strokeRect(20, 20, 30, 40);
+        ctx.fillStyle="blue";
+        ctx.fillRect(80, 80, 160, 90);
+        ctx.clearRect(30, 30,70, 70);
+       // for future changes
+    }
+  </script>
+ </head>
+ <body onload="createImage();">
+   <canvas id="canvas" style="border: 2px solid black" width="400" height="400"> </canvas>
+ </body>
+</html>
