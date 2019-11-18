@@ -1,1 +1,12 @@
-# Empty CSS file for your own CSS
+div#zag {
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+body {
+    background-color: rgba(233, 8, 46, 0.781);
+}
+
+div#yellow {
+    color: yellow;
+}
