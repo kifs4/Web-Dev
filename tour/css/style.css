@@ -1,10 +1,10 @@
 div#zag {
     font-style: oblique;
-    font-size: xx-large;
+    font-size: medium;
 }
 
 body {
-    background-color: rgba(233, 8, 46, 0.781);
+    background-color: rgba(240, 82, 108, 0.781);
 }
 
 div#yellow {
