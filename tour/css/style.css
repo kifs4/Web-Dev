@@ -10,3 +10,17 @@ body {
 div#yellow {
     color: yellow;
 }
+.col-md-6{
+    
+    height: 600px;
+    overflow: auto;
+}
+table{
+    background-color: rgb(218, 180, 185);
+    overflow: scroll;
+}
+.col-md-3{
+    
+    height: 600px;
+    overflow: auto;
+}
