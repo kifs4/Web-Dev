@@ -3,24 +3,39 @@ div#zag {
     font-size: medium;
 }
 
-body {
-    background-color: rgba(240, 82, 108, 0.781);
+body#jap {
+    background-color: rgba(243, 59, 89, 0.781);
+}
+
+body#gb {
+    background-color: rgba(38, 67, 163, 0.781);
 }
 
 div#yellow {
     color: yellow;
 }
-.col-md-6{
-    
+
+.col-md-6 {
     height: 600px;
     overflow: auto;
 }
-table{
-    background-color: rgb(218, 180, 185);
+
+table {
+    background-color: rgb(219, 155, 164);
     overflow: scroll;
 }
-.col-md-3{
-    
+
+.col-md-3 {
     height: 600px;
     overflow: auto;
+}
+
+div#japan {
+    background-image: url(https://img.veenaworld.com/customized-holidays/world/japan-china-korea-taiwan/shjp6/shjp6-bnn-1.jpg);
+    border: 3px solid rgb(151, 6, 6);
+}
+
+div#greatbritain {
+    background-image: url(https://radissontravels.com/wp-content/uploads/bb-plugin/cache/big-ben-london-iStock-481671872-panorama.jpg);
+    border: 3px solid rgb(31, 14, 177);
 }
