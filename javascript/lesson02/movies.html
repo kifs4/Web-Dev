@@ -8,49 +8,57 @@
     <title>Document</title>
     <script>
         var movies = [{
-                title: "Avatar",
-                year: "2012",
-                manufacturer: "20th Century Fox",
-                country: "USA",
-                img: "https://upload.wikimedia.org/wikipedia/ru/4/4b/Avatar-2009.jpg"
-            }, {
-                title: "Avengers: Endgame",
-                year: "2019",
-                manufacturer: "Marvel Studios",
-                country: "Britain",
-                img: "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
-            }, {
-                title: "Mad Max: Fury Road",
-                year: "2015",
-                manufacturer: "Village Roadshow Pictures",
-                country: "USA",
-                img: "https://recenzent.com.ua/wp-content/uploads/2015/05/Mad-Max-Fury-Road-4-film-review-recenzent-title.jpg"
-            }, {
-                title: "The Boys",
-                year: "2017",
-                manufacturer: " Amazon Studios",
-                country: "USA",
-                img: "https://upload.wikimedia.org/wikipedia/ru/3/39/The_Boys_Poster.jpg"
-            }, {
-                title: "Spider-Man: Homecoming",
-                year: "2019",
-                manufacturer: "Marvel Studios",
-                country: "USA",
-                img: "https://upload.wikimedia.org/wikipedia/ru/thumb/5/5a/Spider-Man_Homecoming_logo.jpg/270px-Spider-Man_Homecoming_logo.jpg"
-            }, {
-                title: "A Silent Voice",
-                year: "2016",
-                manufacturer: "Kyoto Animation",
-                country: "Japan",
-                img: "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg"
+            title: "Avatar",
+            year: "2012",
+            manufacturer: "20th Century Fox",
+            country: "USA",
+            img: "https://upload.wikimedia.org/wikipedia/ru/4/4b/Avatar-2009.jpg"
+        }, {
+            title: "Avengers: Endgame",
+            year: "2019",
+            manufacturer: "Marvel Studios",
+            country: "Britain",
+            img: "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
+        }, {
+            title: "Mad Max: Fury Road",
+            year: "2015",
+            manufacturer: "Village Roadshow Pictures",
+            country: "USA",
+            img: "https://recenzent.com.ua/wp-content/uploads/2015/05/Mad-Max-Fury-Road-4-film-review-recenzent-title.jpg"
+        }, {
+            title: "The Boys",
+            year: "2017",
+            manufacturer: " Amazon Studios",
+            country: "USA",
+            img: "https://upload.wikimedia.org/wikipedia/ru/3/39/The_Boys_Poster.jpg"
+        }, {
+            title: "Spider-Man: Homecoming",
+            year: "2019",
+            manufacturer: "Marvel Studios",
+            country: "USA",
+            img: "https://upload.wikimedia.org/wikipedia/ru/thumb/5/5a/Spider-Man_Homecoming_logo.jpg/270px-Spider-Man_Homecoming_logo.jpg"
+        }, {
+            title: "A Silent Voice",
+            year: "2016",
+            manufacturer: "Kyoto Animation",
+            country: "Japan",
+            img: "https://upload.wikimedia.org/wikipedia/en/3/32/A_Silent_Voice_Film_Poster.jpg"
+        }]
+
+        function fillTable() {
+            document.writeln("<table style='border: 8px solid black; border-radius:8px; '><thead><tr><th>Title</th><th>Year</th><th>Studio</th><th>Country</th><th>Photo</th></tr></thead><tbody>");
+            for (let index = 0; index < movies.length; index++) {
+                let element = movies[index];
+                document.writeln("<tr><td>" + element.title + "</td><td>" + element.year + "</td><td>" + element.manufacturer + "</td><td>" +
+                    element.country + "</td>" +
+                    "<td><img style='width: 240px;' src='" + element.img + "' alt='" + element.title + "'></td>");
             }
-
-
-        ]
+            document.writeln("</tbody></table>");
+        }
     </script>
 </head>
 
-<body>
+<body onload="fillTable()">
 
 </body>
 
