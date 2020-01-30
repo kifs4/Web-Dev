@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style>
+
+    </style>
+    <script>
+        var people = [{
+            name: "Ka Ro",
+            age: "40",
+            salary: "60",
+        }, {
+            name: "Jo Vo",
+            age: "20",
+            salary: "130",
+        }, {
+            name: "Do Jan",
+            age: "60",
+            salary: "600",
+        }, {
+            name: "Bo Chong",
+            age: "33",
+            salary: "400",
+        }, {
+            name: "Jojo Jotaro",
+            age: "77",
+            salary: "777",
+        }, {
+            name: "Max Gal",
+            age: "16",
+            salary: "80",
+        }, ]
+
+        function copareByAge(peopleA, peopleB) {
+            if (peopleA.age == peopleB.age) {
+                return 0;
+            } else if (peopleA.age < peopleB.age)
+                return -1;
+            else
+                return 1;
+        }
+
+        function copareBySalary(peopleA, peopleB) {
+
+            if (peopleA.salary == peopleB.salary) {
+                return 0;
+            } else if (peopleA.salary < peopleB.salary)
+                return -1;
+            else
+                return 1;
+        }
+    </script>
+</head>
+
+<body>
+    <table id="tbl1">
+
+    </table>
+
+</body>
+
+</html>
