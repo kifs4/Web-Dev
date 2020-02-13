@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ParniChis</title>
+    <style>
+        /* tr {
+            border: 12px solid black;
+        }
+        
+        td {
+            border: 4px solid black;
+        } */
+    </style>
+    <script>
+        function makeTable() {
+            var m = document.getElementById('num1').value;
+            var n = document.getElementById('num2').value;
+            var riz = n - m;
+            var sum = " ";
+            for (var i = 1; i <= riz; i++) {
+
+
+                if (m % 2 == 0) {
+                    sum += "<tr> <td>" + i + "</td><td>" + m + "</td></tr>";
+                } else {
+                    sum += "<tr><td>" + i + "</td></tr>";
+                }
+                m++;
+
+
+            }
+            answer.innerHTML += sum;
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="num1">M=</label>
+            <input type="number" id="num1" name="num1">
+        </div>
+        <div>
+            <label for="num2">N=</label>
+            <input type="number" id="num2" name="num2">
+        </div>
+        <button type="button" onclick="makeTable()">makeTable</button>
+    </form>
+    <table id="answer">
+
+    </table>
+</body>
+
+</html>

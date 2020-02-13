@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td {
+            background-color: blue;
+        }
+        
+        tr {
+            background-color: red;
+        }
+    </style>
+    <script>
+        function makeTable() {
+            var m = document.getElementById('num1').value;
+            var n = document.getElementById('num2').value;
+
+            var tdshka = "";
+
+            // var table = document.createElement("table");
+            // var tableBody = document.createElement("tbody");
+
+            // for (var i = 0; i < m; i++)
+            //     var row = document.createElement("tr");
+
+            // for (var j = 0; j < m; j++)
+            //     var row = document.createElement("td");
+
+            for (var i = 0; i < m; i++) {
+                tdshka += '<td>' + m + '</td>'
+                result.innerHTML += ('tr' + tdshka + '/tr');
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="num1">M=</label>
+            <input type="number" id="num1" name="num1">
+        </div>
+        <div>
+            <label for="num2">N=</label>
+            <input type="number" id="num2" name="num2">
+        </div>
+        <button type="button" onclick="makeTable()">Make Table</button>
+    </form>
+
+    <table id="result">
+    </table>
+</body>
+
+</html>
