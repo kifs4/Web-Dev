@@ -10,7 +10,7 @@ router.get('/', function(req, res) {
 router.get('/make-short-name', function(req, res) {
     // res.render('index', { title: 'Express' });
     var s = req.query.firstname[0] + ". ";
-    var q = req.query.lastname[0] + ". ";
+    // var q = req.query.lastname[0] + ". ";
     res.send('Hello ' + s + req.query.lastname)
 });
 
