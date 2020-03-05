@@ -8,11 +8,25 @@ router.get('/', function(req, res) {
     });
 });
 
-router.post('/', function(req, res) {
-    res.render('index', {
+router.post('/', function(req, res) {;
+    var a = parseInt(req.body.firstnumber) + parseInt(req.body.lastnumber);
+    var b = parseInt(req.body.firstnumber) * parseInt(req.body.lastnumber);
+    var c = parseInt(req.body.firstnumber) - parseInt(req.body.lastnumber);
+
+    if (isNaN(req.body.firstnumber) && isNaN(req.body.lastnumber) == false)
+        res.render('index', {
+            title: 'Method POST result:',
+            Greeting: 'Not a Numbers, '
+        });
+
+    else
+
+        res.render('index', {
         title: 'Method POST result:',
-        Greeting: 'Hello, ' + req.body.firstname[0] + '. ' + req.body.lastname
+        Greeting: 'Hello, ' + ' ' + a + ' ' + b + ' ' + c + ' '
+
     });
+
 });
 
 module.exports = router;
